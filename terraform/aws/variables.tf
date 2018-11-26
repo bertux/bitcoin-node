@@ -17,8 +17,8 @@ variable "keypair" {
   type    = "string"
   default = "dev"
 }
- 
-# Instance type to use 
+
+# Instance type to use
 variable "type" {
   type    = "string"
   default = "t2.micro"
@@ -27,7 +27,7 @@ variable "type" {
 # AWS region
 variable "region" {
   type    = "string"
-  default = "us-east-1"
+  default = "ap-south-1"
 }
 
 # if you need to define tenancy
@@ -35,4 +35,3 @@ variable "tenancy" {
   type    = "string"
   default = "default"
 }
-
