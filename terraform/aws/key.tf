@@ -1,0 +1,4 @@
+resource "aws_key_pair" "deployer" {
+  key_name   = "dev"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDkGnSpesdmXv2cDnwusdnzaImJePFLfdNTdXqrO83ii7E5bVVR/sL0eXHmCIyAwAW7KxkLJisqy6Lw+6SZhYK/TrktHwEDfutm7fZwR7PLa98mKHm+SX5LT5t72AyXk4eE9rCyRNJnaTU+NqBgnfF0kglOA47gD3OpWd0GVE00UbPBlWH3JYvz3SSjEU2zd9Rq0BhUlYPSoxqAEL536hVbmUYo+RiReXZaCYDf5msEDf2BS/HZSvQMDKAZfJ1KWkDE/1ZSAdtt8MAAYNmt1unypyXRGPgOyrdqxKXHzih1yjDIw1+LsQhcxY/XE2WB4mHQqZfT1LNy1untLBD2vRR bert@bitbuddy"
+}
