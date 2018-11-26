@@ -1,5 +1,8 @@
 #!/bin/bash
 apt-get update
-apt-get -y install python-pip
+apt-get -y install python-pip git
 pip install ansible
-HOME=/root ansible-pull -o -d /opt/bitcoin-node -U https://github.com/bertux/bitcoin-node /opt/bitcoin-node/ansible/bitcoin_node.yml >> /var/log/ansible-pull.log
+cd /opt
+git clone https://github.com/bertux/bitcoin-node
+cd bitcoin-node/ansible
+ansible-playbook bitcoin_node.yml >> /var/log/ansible-pull.log
